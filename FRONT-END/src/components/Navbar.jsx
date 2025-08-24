@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Images from "./Images";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -6,7 +7,7 @@ const Navbar = () => {
     <div className="w-full h-16 md:h-20 flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center gap-4 text-2xl font-bold">
-        <img src="logo.png" alt="logo" className="w-8 h-8" />
+        <Images src={"logo.png"} alt={"logo"} w={32} h={32} />
         <span>D-BLOG</span>
       </div>
       {/* MOBILE MANU */}
@@ -24,13 +25,15 @@ const Navbar = () => {
             open ? "-right-0" : "-right-[100%]"
           }`}
         >
-               <a href="/">Home</a>
-        <a href="/">Trending</a>
-        <a href="/">Most Popular</a>
-        <a href="/">About</a>
-        <a href="">
-          <button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">Login 👋</button>
-        </a>
+          <a href="/">Home</a>
+          <a href="/">Trending</a>
+          <a href="/">Most Popular</a>
+          <a href="/">About</a>
+          <a href="">
+            <button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">
+              Login 👋
+            </button>
+          </a>
         </div>
       </div>
       {/* DEKSTOP MANU */}
@@ -40,7 +43,9 @@ const Navbar = () => {
         <a href="/">Most Popular</a>
         <a href="/">About</a>
         <a href="">
-          <button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">Login 👋</button>
+          <button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">
+            Login 👋
+          </button>
         </a>
       </div>
     </div>
