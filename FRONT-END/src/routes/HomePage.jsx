@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import MainCategories from "../components/MainCategories"
+import FeaturedPosts from "../components/FeaturedPosts";
 const HomePage = () => {
   return (
     <div className="mt-4 flex flex-col gap-4 ">
@@ -63,6 +64,8 @@ const HomePage = () => {
       </div>
       {/* CATEGORIES */}
       <MainCategories/>
+      {/* FEATURED POSTS */}
+      <FeaturedPosts/>
     </div>
   );
 };
